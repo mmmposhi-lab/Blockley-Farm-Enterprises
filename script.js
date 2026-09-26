@@ -16,7 +16,7 @@ const dialogCaption = document.querySelector('#lightbox-caption');
 const closeButton = document.querySelector('.lightbox-close');
 document.querySelectorAll('.image-button').forEach(button => {
   button.addEventListener('click', () => {
-    dialogImage.src = button.dataset.full;
+    dialogImage.src = button.querySelector('img').src;
     dialogImage.alt = button.querySelector('img').alt;
     dialogCaption.textContent = button.dataset.caption || '';
     dialog.showModal();

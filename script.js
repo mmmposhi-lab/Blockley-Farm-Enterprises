@@ -3,7 +3,7 @@
 const siteImages = [
   'hero-farm.jpg', 'broiler-chicks-illustrative-v2.jpg', 'adult-broilers-illustrative-v2.jpg',
   'layer-hens.jpg', 'egg-handling.jpg', 'egg-supply.jpg',
-  'fresh-vegetables.jpg', 'cattle.jpg', 'livestock-management.jpg',
+  'fresh-vegetables.jpg', 'maize-groundnuts.webp', 'cattle.jpg', 'livestock-management.jpg',
   'cattle-orders.jpg', 'goats.jpg', 'goat-orders.jpg', 'meat-orders.jpg'
 ];
 document.querySelectorAll('.hero-image, .gallery-grid img').forEach((img, index) => {

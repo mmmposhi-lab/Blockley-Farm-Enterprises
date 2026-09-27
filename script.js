@@ -1,7 +1,7 @@
 // Use the images hosted with this site. Some deployment integrations rewrite
 // image tags through an unconfigured Cloudinary account.
 const siteImages = [
-  'hero-farm.jpg', 'broiler-chicks.jpg', 'adult-broilers.jpg',
+  'hero-farm.jpg', 'broiler-chicks-illustrative-v2.jpg', 'adult-broilers-illustrative-v2.jpg',
   'layer-hens.jpg', 'egg-handling.jpg', 'egg-supply.jpg',
   'fresh-vegetables.jpg', 'cattle.jpg', 'livestock-management.jpg',
   'cattle-orders.jpg', 'goats.jpg', 'goat-orders.jpg', 'meat-orders.jpg'

@@ -1,3 +1,16 @@
+// Use the images hosted with this site. Some deployment integrations rewrite
+// image tags through an unconfigured Cloudinary account.
+const siteImages = [
+  'hero-farm.jpg', 'broiler-chicks.jpg', 'adult-broilers.jpg',
+  'layer-hens.jpg', 'egg-handling.jpg', 'egg-supply.jpg',
+  'fresh-vegetables.jpg', 'cattle.jpg', 'livestock-management.jpg',
+  'cattle-orders.jpg', 'goats.jpg', 'goat-orders.jpg', 'meat-orders.jpg'
+];
+document.querySelectorAll('.hero-image, .gallery-grid img').forEach((img, index) => {
+  if (siteImages[index]) img.src = '/assets/' + siteImages[index];
+  if (index === 0) img.loading = 'eager';
+});
+
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.primary-nav');
 if (toggle && nav) {

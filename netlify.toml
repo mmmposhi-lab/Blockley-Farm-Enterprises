@@ -1,5 +1,12 @@
 [build]
-  publish = "."
+  command = "node --test && node scripts/build.mjs"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+[build.processing]
+  skip_processing = true
 
 [[headers]]
   for = "/*"
@@ -7,3 +14,8 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"

@@ -1,0 +1,7 @@
+dist/
+.openai/
+node_modules/
+.env
+.env.*
+.netlify/
+*.log

@@ -1,0 +1,100 @@
+[
+  {
+    "file": "assets/hero-farm.jpg",
+    "width": 720,
+    "height": 405,
+    "sha256": "0b723dea34e2afc6ad319d00f5799058e2adfc98b628733932ed16ac6a77fe4d",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/broiler-chicks.jpg",
+    "width": 540,
+    "height": 720,
+    "sha256": "8c220ed57d2536b69527e00d7e2270d2e7253060b556ef0ee877adc543df62f4",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/fish-ponds-blockley-oct-2026.jpg",
+    "width": 360,
+    "height": 203,
+    "sha256": "d9cbf8ad3dd57561f228ff13cf124eb299a492cb3bc29e1265fea3e51d9e70dc",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/layer-hens.jpg",
+    "width": 405,
+    "height": 720,
+    "sha256": "d4842440288b8e195e6cea70d3f29de7eba500db7388544e682eba2c9afb346f",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/fresh-vegetables.jpg",
+    "width": 720,
+    "height": 540,
+    "sha256": "7da65e090020bed73f7a542f23ff2d4f185254d2bb091103b73d533311d7d1d4",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/egg-supply.jpg",
+    "width": 720,
+    "height": 405,
+    "sha256": "920366d084af7bc7f4b7a32e807a2a83f4bf54c42196b2a28dc0d6669959aa8c",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/vegetables-blockley-oct-2026.jpg",
+    "width": 360,
+    "height": 203,
+    "sha256": "e207ea8babd730ef167556712d4d6931d3473c7d8148464078c33584fcc9c50d",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/maize-groundnuts.webp",
+    "width": 1400,
+    "height": 1050,
+    "sha256": "dd795061d84dca66dc78dac9ef4d1c50744ae5f9b2ccd49220a6434bd9d49fe7",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/cattle.jpg",
+    "width": 542,
+    "height": 720,
+    "sha256": "06b7b9949cb5a65f44fe82339fd40cb0643a6f920c7434e3f414184bc45dfdce",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/livestock-management.jpg",
+    "width": 542,
+    "height": 720,
+    "sha256": "1812ee91b294a52627b556e0e3cd9a3691611937534ac0d7893224cea67d07f5",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/cattle-orders.jpg",
+    "width": 542,
+    "height": 720,
+    "sha256": "131271ab0298956682b751500d7a09c6d04611cf93b6fe769322a648815e9928",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/goats.jpg",
+    "width": 542,
+    "height": 720,
+    "sha256": "0fbfa746658b5475a37a72d5e538d4e88839d9397dd46bcf4deed981f7505e6a",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/goat-orders.jpg",
+    "width": 542,
+    "height": 720,
+    "sha256": "5dacf9598275c40d3a84a308f9a1c812641eea74b7d97cd1f413e29bb8f2e0eb",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  },
+  {
+    "file": "assets/meat-orders.jpg",
+    "width": 720,
+    "height": 540,
+    "sha256": "88222eb446a2c2a093f321db4ae5f23f42a017264b5c30c3d73c9af6f14a6006",
+    "source": "Existing farm repository photo; visually inspected 21 October 2026."
+  }
+]

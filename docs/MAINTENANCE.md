@@ -2,13 +2,19 @@
 
 The GitHub repository is the editable source of truth. Netlify is the deployment destination. ChatGPT can prepare changes, but those changes must reach a repository branch before they can become the official site.
 
-## First dashboard session — pending secure sign-in
+## Dashboard session status — 21 October 2026
+
+Verified the existing GitHub repository connection and production branch. The currently published deployment is `6abe8ba9ce82afe4dc2d91ea`, from source commit `be80e2f5c0c17b42fd49efc591eaf67e50512b8d`. Production auto-publishing was successfully locked to that deployment. Its deploy summary confirms a Cloudinary error and an unconfigured 21YunBox plugin error. GitHub Site checks passed for repair commit `9a72d0e1b0e5cc0ceb67178952412a5367fac7cf`.
+
+The browser connection failed when starting the deployment ZIP download and could not resume the signed-in session. The full ZIP download, build-plugin changes and hosted Netlify preview are still pending. Existing public-response and source backups are available. No production content has been replaced.
+
+## Dashboard completion steps
 
 1. Select the existing `blockleyfarmenterprises` project. Verify its production address matches `https://blockleyfarmenterprises.netlify.app/`.
 2. Record the published deployment ID, permalink and originating Git commit, when available. Download the entire successful deployment ZIP. Preserve it separately from the repaired source.
 3. Lock the published deployment to stop production auto-publishing during review. Do not stop builds, which would also stop previews.
 4. Verify or connect `mmmposhi-lab/Blockley-Farm-Enterprises`, with production branch `main`. A new GitHub access authorization, if required, must be completed securely by the owner.
-5. Inspect enabled build integrations. Disable the Cloudinary build integration responsible for rewriting local image URLs. Do not copy any environment-variable values, tokens or credentials into chat, logs or source files.
+5. Inspect enabled build integrations. Disable the Cloudinary build integration responsible for rewriting local image URLs and the unconfigured `@21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn` integration. Retain Lighthouse. Do not copy any environment-variable values, tokens or credentials into chat, logs or source files.
 6. Confirm the settings in `netlify.toml`: Node 24, build `node --test && node scripts/build.mjs`, publish `dist`. Do not publish the repository root.
 7. Enable pull-request Deploy Previews. Keep the current production deployment locked. The first repair draft has a `[skip netlify]` marker; remove it from the pull-request title and push a new commit without the marker when ready to build a preview.
 8. Check the generated preview HTML and its actual image requests. Every photograph must use its local `assets/` path, including with JavaScript disabled. Confirm all gallery images load, contact links point to the intended people, the map opens correctly, and the build-info commit matches the reviewed source. Preview headers must include `X-Robots-Tag: noindex`.

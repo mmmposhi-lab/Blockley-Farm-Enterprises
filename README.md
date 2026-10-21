@@ -25,7 +25,7 @@ For the additional strict image decode check, use Python 3.12 and install `requi
 
 The repository's `netlify.toml` defines build command `node --test && node scripts/build.mjs`, publish directory `dist`, and Node version 24. The dashboard must link this exact repository and the `main` production branch.
 
-**Dashboard configuration remains pending authentication as of 21 October 2026.** The published HTML was observed with Cloudinary image rewrites. Disable that site's Cloudinary build integration before deploying the repaired source. `skip_processing` disables Netlify post-processing; it does not disable a separately enabled Cloudinary build plugin.
+**Dashboard verified on 21 October 2026:** the site already uses this repository, production is `main@be80e2f`, and publishing is now locked to deployment `6abe8ba9ce82afe4dc2d91ea`. The remaining integration changes and full deployment ZIP download are pending because the browser connection failed during the download attempt. Disable the Cloudinary build integration before deploying the repaired source. Also disable the unconfigured `@21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn` integration, which is reporting plugin errors; retain Lighthouse for verification. `skip_processing` disables Netlify post-processing; it does not disable a separately enabled Cloudinary build plugin.
 
 ## Release process
 

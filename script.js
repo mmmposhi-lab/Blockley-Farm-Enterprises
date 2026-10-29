@@ -1,14 +1,10 @@
-// Use the images hosted with this site. Some deployment integrations rewrite
-// image tags through an unconfigured Cloudinary account.
-const siteImages = [
-  'hero-farm.jpg', 'broiler-chicks-illustrative-v2.jpg', 'adult-broilers-illustrative-v2.jpg',
-  'layer-hens.jpg', 'egg-handling.jpg', 'egg-supply.jpg',
-  'fresh-vegetables.jpg', 'maize-groundnuts.webp', 'cattle.jpg', 'livestock-management.jpg',
-  'cattle-orders.jpg', 'goats.jpg', 'goat-orders.jpg', 'meat-orders.jpg'
-];
-document.querySelectorAll('.hero-image, .gallery-grid img').forEach((img, index) => {
-  if (siteImages[index]) img.src = '/assets/' + siteImages[index];
-  if (index === 0) img.loading = 'eager';
+// Keep each image paired with the photo selected in the HTML, even when
+// deployment integrations wrap its URL through Cloudinary.
+document.querySelectorAll('.hero-image, .gallery-grid img').forEach(img => {
+  const source = img.getAttribute('src') || '';
+  const asset = source.match(/(?:^|\/)assets\/([^/?#]+)(?:[?#]|$)/);
+  if (asset) img.src = '/assets/' + asset[1];
+  if (img.classList.contains('hero-image')) img.loading = 'eager';
 });
 
 const toggle = document.querySelector('.nav-toggle');
